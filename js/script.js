@@ -31,3 +31,5 @@ function closePopup() {
 
 openBtn.addEventListener("click", openPopup);
 closeButton.addEventListener("click", closePopup);
+
+// Galery
