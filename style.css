@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700;&family=Fredoka:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 
 html::-webkit-scrollbar {
     width: 8px;
@@ -12,9 +12,13 @@ html::-webkit-scrollbar-thumb {
 
 body {
     margin: 0;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 100%;
     scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Header Header Header Header Heade Header Header Header Header Header Header Header Header */
@@ -140,22 +144,313 @@ header {
 
 /* Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body */
 
-.droneBanner {
+.main {
     padding: 5%;
-    background-image: url(img/Sky.jpg);
+    height: 600px;
+    background-image: url(img/Sky.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
+    justify-content: center;
 }
 
-.droneBannerUp {
+.mainText {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.buttonBuy {
+.mainTextTitle {
+    font-size: 50px;
+    color: #adff2f;
+}
+
+.mainTextTitleUp {
+    font-size: 36px;
+    color: white;
+}
+
+/* Info Info Info Info Info Info Info Info Info Info Info Info Info Info Info Info Info Info Info Info Info Info */
+
+.containerInfo {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 50% 50% 50% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+        "infoOnePhoto infoOne"
+        "infoTwoPhoto infoTwo";
+}
+
+.containerInfo>div {
+    padding: 5%;
+}
+
+.infoOnePhoto {
+    justify-self: center;
+    align-self: center;
+    grid-area: infoOnePhoto;
+}
+
+.infoTwoPhoto {
+    justify-self: center;
+    align-self: center;
+    grid-area: infoTwoPhoto;
+}
+
+.infoOne {
+    justify-self: start;
+    align-self: center;
+    grid-area: infoOne;
+}
+
+.infoTwo {
+    justify-self: start;
+    align-self: center;
+    grid-area: infoTwo;
+}
+
+.infoIcon {
+    width: 50px;
+}
+
+/* Drons Drons Drons Drons Drons Drons Drons Drons Drons Drons Drons Drons Drons Drons Drons */
+
+.drons {
+    padding: 0 5%;
+}
+
+.containerDrons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 50% 50% 50% 50%;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+        "mavic3"
+        "mavicFly"
+        "mavic3Т"
+        "mavicClassic"
+        "max4T";
+}
+
+.mavic3 {
+    color: white;
+    margin: 1%;
+    padding: 5%;
+    background-image: url(img/Drons/DJIMavic3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "mavic3Name mavic3Name mavic3Link"
+        ". . ."
+        "mavic3Text mavic3Text mavic3Text";
+    grid-area: mavic3;
+}
+
+.mavic3Link {
+    justify-self: end;
+    align-self: start;
+    grid-area: mavic3Link;
+}
+
+.mavic3Text {
+    font-size: 20px;
+    align-self: end;
+    grid-area: mavic3Text;
+}
+
+.mavic3Name {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: start;
+    grid-area: mavic3Name;
+}
+
+.mavicFly {
+    color: white;
+    margin: 1%;
+    padding: 5%;
+    background-image: url(img/Drons/DJIMavicFly.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "mavicFlyName mavicFlyName mavicFlyLink"
+        ". . ."
+        "mavicFlyText mavicFlyText mavicFlyText";
+    grid-area: mavicFly;
+}
+
+.mavicFlyName {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: start;
+    grid-area: mavicFlyName;
+}
+
+.mavicFlyLink {
+    justify-self: end;
+    align-self: start;
+    grid-area: mavicFlyLink;
+}
+
+.mavicFlyText {
+    font-size: 20px;
+    align-self: end;
+    grid-area: mavicFlyText;
+}
+
+.mavic3Т {
+    color: white;
+    margin: 1%;
+    padding: 5%;
+    background-image: url(img/Drons/DJIMavic3Т.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "mavic3TName mavic3TName mavic3TLink"
+        ". . ."
+        "mavic3TText mavic3TText mavic3TText";
+    grid-area: mavic3Т;
+}
+
+.mavic3TName {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: start;
+    grid-area: mavic3TName;
+}
+
+.mavic3TLink {
+    justify-self: end;
+    align-self: start;
+    grid-area: mavic3TLink;
+}
+
+.mavic3TText {
+    font-size: 20px;
+    align-self: end;
+    grid-area: mavic3TText;
+}
+
+.mavicClassic {
+    color: white;
+    margin: 1%;
+    padding: 5%;
+    background-image: url(img/Drons/DJIMavicClassic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "mavicClassicName mavicClassicName mavicClassicLink"
+        ". . ."
+        "mavicClassicText mavicClassicText mavicClassicText";
+    grid-area: mavicClassic;
+}
+
+.mavicClassicName {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: start;
+    grid-area: mavicClassicName;
+}
+
+.mavicClassicLink {
+    justify-self: end;
+    align-self: start;
+    grid-area: mavicClassicLink;
+}
+
+.mavicClassicText {
+    font-size: 20px;
+    align-self: end;
+    grid-area: mavicClassicText;
+}
+
+.max4T {
+    color: white;
+    margin: 1%;
+    padding: 5%;
+    background-image: url(img/Drons/Max4T.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "max4TName max4TName max4TLink"
+        ". . ."
+        "max4TText max4TText max4TText";
+    grid-area: max4T;
+}
+
+.max4TName {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: start;
+    grid-area: max4TName;
+}
+
+.max4TLink {
+    justify-self: end;
+    align-self: start;
+    grid-area: max4TLink;
+}
+
+.max4TText {
+    font-size: 20px;
+    align-self: end;
+    grid-area: max4TText;
+}
+
+
+
+/* .buttonBuy {
     padding: 15px;
     font-size: 26px;
     font-weight: 800;
@@ -194,7 +489,7 @@ header {
     font-size: 24px;
     float: right;
     cursor: pointer;
-}
+} */
 
 /* Advantages Advantages  Advantages  Advantages Advantages Advantages Advantages Advantages Advantages Advantages Advantages Advantages */
 
@@ -225,113 +520,100 @@ header {
     justify-content: space-between;
 }
 
-/* howToWork howToWork howToWork howToWork howToWork howToWork */
+/* statistics statisticsstatisticsstatisticsstatisticsstatisticsstatisticsstatistics */
 
-.howToWork {
-    padding: 0 5%;
-    display: flex;
-    align-content: center;
-    align-items: center;
-}
-
-.textInfo {
-    font-size: 22px;
-    font-weight: 600;
-}
-
-/* Galery Galery Galery Galery Galery Galery Galery Galery Galery Galery Galery Galery Galery Galery Galery Galery Galery Galery */
-
-/* CompleteSetCompleteSetCompleteSetCompleteSetCompleteSet */
-
-.completeSet {
-    display: flex;
-    flex-direction: column;
-}
-
-.completeSet li {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.completeSetGreen {
-    background-color: #6cb647;
-    color: white;
-    padding: 2% 5%;
-}
-
-.completeSetBox {
+.statistics {
     padding: 1% 5%;
     background-color: rgb(242, 242, 242);
-    display: flex;
-    flex-direction: column;
 }
 
-/* completeSetPhotos */
+.statisticsNumbers {
+    color: #6cb647;
+    font-size: 33px;
+    margin-top: 15px;
+}
 
-.containerCompleteSetPhotos {
-    padding: auto;
+.statisticsNumbersBig {
+    color: white;
+    font-size: 42px;
+    margin-top: 15px;
+    font-weight: 800;
+}
+
+.containerStatistics {
     display: grid;
-    grid-auto-columns: 50% 50% 50% 50%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 50% 50% 50% 50%;
     gap: 0px 0px;
-    grid-template-areas: "One"
-        "Two"
-        "Three"
-        "Four";
+    grid-auto-flow: row;
     justify-content: stretch;
     justify-items: stretch;
     align-items: stretch;
+    grid-template-areas:
+        "firstStatistics"
+        "secondStatistics"
+        "thirdStatistics"
+        "fourStatistics";
 }
 
-.One {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    align-self: end;
-    grid-area: One;
+.containerStatistics>div {
+    margin: 3% 0;
 }
 
-.Two {
+.firstStatistics {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    align-self: end;
-    grid-area: Two;
+    align-content: center;
+    justify-content: center;
+    grid-area: firstStatistics;
+    text-align: center;
+    background-color: white;
+    padding: 3% 10%;
+    border: 1px solid rgb(242, 242, 242);
 }
 
-.Three {
+.secondStatistics {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    align-self: end;
-    grid-area: Three;
+    align-content: center;
+    justify-content: center;
+    grid-area: secondStatistics;
+    text-align: center;
+    background-color: white;
+    padding: 3% 10%;
+    border: 1px solid rgb(242, 242, 242);
 }
 
-.Four {
+.thirdStatistics {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    align-self: end;
-    grid-area: Four;
+    align-content: center;
+    justify-content: center;
+    grid-area: thirdStatistics;
+    text-align: center;
+    background-color: white;
+    padding: 3% 10%;
+    border: 1px solid rgb(242, 242, 242);
 }
+
+.fourStatistics {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    grid-area: fourStatistics;
+    text-align: center;
+    background: linear-gradient(75deg, rgba(108, 182, 71, 1) 0%, rgba(90, 182, 93, 1) 50%, rgba(27, 183, 198, 1) 100%);
+    padding: 3% 10%;
+    border: 1px solid rgb(242, 242, 242);
+}
+
 
 /*  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 760px) {
-    .droneBannerUp {
-        flex-direction: row;
-    }
-
     .menuButton {
         display: none;
-    }
-
-    .droneBannerText {
-        padding: 0 50px;
     }
 
     .infoBoxHeader {
@@ -343,43 +625,92 @@ header {
         margin: 25px;
     }
 
-    .completeSet {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .completeSetGreen {
-        width: 25%;
-        padding: 3%;
-    }
-
-    .completeSetBox {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0;
-    }
-
-    .completeSetBoxes {
-        width: 50%;
-        padding: 3%;
-    }
-
-    .completeSetPhotos div {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-    }
-
-    .containerCompleteSetPhotos {
-        padding: 5% 0;
+    .containerStatistics {
         display: grid;
         grid-auto-columns: 50% 50% 50% 50%;
+        grid-auto-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 0px 0px;
-        grid-template-areas: "One Two Three Four";
+        grid-template-areas:
+            "firstStatistics secondStatistics thirdStatistics"
+            "fourStatistics fourStatistics fourStatistics";
+        justify-content: stretch;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .someInfo {
+        padding: 3% 10%;
+    }
+
+    .mainTextTitle {
+        font-size: 180px;
+        margin: 0;
+    }
+
+    .mainTextTitleUp {
+        font-size: 46px;
+    }
+
+    .containerInfo {
+        display: grid;
+        grid-auto-columns: 50% 50% 50% 50%;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 0.4fr 1.1fr 0.4fr 1.1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "infoOnePhoto infoOne infoTwoPhoto infoTwo";
+        justify-content: stretch;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .infoOnePhoto {
+        justify-self: end;
+    }
+
+    .infoTwoPhoto {
+        justify-self: end;
+    }
+
+    .infoIcon {
+        width: 100px;
+    }
+
+    .infoText {
+        font-size: 22px;
+    }
+
+    .max4T {
+        color: white;
+        margin: 1%;
+        padding: 5%;
+        background-image: url(img/Drons/Max4T.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "max4TName max4TName max4TLink"
+            ". . ."
+            "max4TText max4TText max4TText";
+        grid-area: max4T;
+    }
+
+    .containerDrons {
+        display: grid;
+        grid-auto-columns: 50% 50% 50% 50%;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "mavic3 mavicFly"
+            "mavic3Т mavicClassic"
+            "max4T max4T";
         justify-content: stretch;
         justify-items: stretch;
         align-items: stretch;
