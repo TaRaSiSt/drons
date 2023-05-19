@@ -629,7 +629,7 @@ header {
         display: grid;
         grid-auto-columns: 50% 50% 50% 50%;
         grid-auto-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 0px 0px;
         grid-template-areas:
@@ -680,25 +680,6 @@ header {
 
     .infoText {
         font-size: 22px;
-    }
-
-    .max4T {
-        color: white;
-        margin: 1%;
-        padding: 5%;
-        background-image: url(img/Drons/Max4T.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 300px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-template-areas: "max4TName max4TName max4TLink"
-            ". . ."
-            "max4TText max4TText max4TText";
-        grid-area: max4T;
     }
 
     .containerDrons {
