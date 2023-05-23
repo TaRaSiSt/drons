@@ -166,7 +166,8 @@ header {
 
 .mainTextTitle {
     font-size: 50px;
-    color: #adff2f;
+    color: #00ffff;
+    /* color: #ff9900; */
 }
 
 .mainTextTitleUp {
@@ -502,22 +503,208 @@ header {
     font-size: 32px;
 }
 
-.advantagesBox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.containeradvantages {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 50% 50% 50% 50%;
+    grid-auto-rows: 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+        "advantagesCardOne"
+        "advantagesCardTwo"
+        "advantagesCardThree"
+        "advantagesCardFour"
+        "advantagesCardFive"
+        "advantagesCardSix";
 }
 
-.cardAdvantages {
-    padding: 15px 10px 5px 10px;
-    background-color: white;
-    border-radius: 15px;
-    margin: 10px 15px 25px 15px;
+.advantagesCardOne {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "cardPhotoOne cardTitleOne cardTitleOne"
+        "cardPhotoOne cardTextOne cardTextOne"
+        "cardPhotoOne cardTextOne cardTextOne";
+    grid-area: advantagesCardOne;
 }
 
-.cardAdvantagesImg {
-    display: flex;
-    justify-content: space-between;
+.cardPhotoOne {
+    grid-area: cardPhotoOne;
+}
+
+.cardTitleOne {
+    justify-self: stretch;
+    align-self: center;
+    grid-area: cardTitleOne;
+}
+
+.cardTextOne {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: cardTextOne;
+}
+
+.advantagesCardTwo {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "cardPhotoTwo cardTitleTwo cardTitleTwo"
+        "cardPhotoTwo cardTextTwo cardTextTwo"
+        "cardPhotoTwo cardTextTwo cardTextTwo";
+    grid-area: advantagesCardTwo;
+}
+
+.cardPhotoTwo {
+    grid-area: cardPhotoTwo;
+}
+
+.cardTitleTwo {
+    justify-self: stretch;
+    align-self: center;
+    grid-area: cardTitleTwo;
+}
+
+.cardTextTwo {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: cardTextTwo;
+}
+
+.advantagesCardThree {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1fr;
+    grid-template-rows: 1.2fr 0.8fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "cardPhotoThree cardTitleThree cardTitleThree"
+        "cardPhotoThree cardTextThree cardTextThree"
+        "cardPhotoThree cardTextThree cardTextThree";
+    grid-area: advantagesCardThree;
+}
+
+.cardPhotoThree {
+    grid-area: cardPhotoThree;
+}
+
+.cardTitleThree {
+    align-self: center;
+    grid-area: cardTitleThree;
+}
+
+.cardTextThree {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: cardTextThree;
+}
+
+.advantagesCardFour {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "cardPhotoFour cardTitleFour cardTitleFour"
+        "cardPhotoFour cardTextFour cardTextFour"
+        "cardPhotoFour cardTextFour cardTextFour";
+    grid-area: advantagesCardFour;
+}
+
+.cardPhotoFour {
+    grid-area: cardPhotoFour;
+}
+
+.cardTitleFour {
+    justify-self: stretch;
+    align-self: center;
+    grid-area: cardTitleFour;
+}
+
+.cardTextFour {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: cardTextFour;
+}
+
+.advantagesCardFive {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1.1fr 0.9fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "cardPhotoFive cardTitleFive cardTitleFive"
+        "cardPhotoFive cardTextFive cardTextFive"
+        "cardPhotoFive cardTextFive cardTextFive";
+    grid-area: advantagesCardFive;
+}
+
+.cardPhotoFive {
+    grid-area: cardPhotoFive;
+}
+
+.cardTitleFive {
+    justify-self: stretch;
+    align-self: center;
+    grid-area: cardTitleFive;
+}
+
+.cardTextFive {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: cardTextFive;
+}
+
+.advantagesCardSix {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "cardPhotoSix cardTitleSix cardTitleSix"
+        "cardPhotoSix cardTextSix cardTextSix"
+        "cardPhotoSix cardTextSix cardTextSix";
+    grid-area: advantagesCardSix;
+}
+
+.cardPhotoSix {
+    grid-area: cardPhotoSix;
+}
+
+.cardTitleSix {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: cardTitleSix;
+}
+
+.cardTextSix {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: cardTextSix;
+}
+
+.advantagesIcon>img {
+    border-radius: 10px;
+}
+
+.advantagesTitle {
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #FF9900;
 }
 
 /* statistics statisticsstatisticsstatisticsstatisticsstatisticsstatisticsstatistics */
@@ -692,6 +879,21 @@ header {
         grid-template-areas: "mavic3 mavicFly"
             "mavic3Т mavicClassic"
             "max4T max4T";
+        justify-content: stretch;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .containeradvantages {
+        display: grid;
+        grid-auto-columns: 50% 50% 50% 50%;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px 15px;
+        grid-template-areas:
+            "advantagesCardOne advantagesCardTwo advantagesCardThree"
+            "advantagesCardFour advantagesCardFive advantagesCardSix";
         justify-content: stretch;
         justify-items: stretch;
         align-items: stretch;
