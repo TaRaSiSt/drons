@@ -51,7 +51,6 @@ header {
 
 .socialLinks>a>img {
     width: 36px;
-
 }
 
 .logo {
@@ -795,6 +794,46 @@ header {
     border: 1px solid rgb(242, 242, 242);
 }
 
+/* Footer */
+
+footer {
+    background-color: black;
+    padding: 0 10%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.socialLinksFooter {
+    width: 100%;
+}
+
+.socialLinksFooter>a>img {
+    width: 36px;
+
+}
+
+.rights {
+    font-size: 14px;
+    color: #a1a1a1;
+    font-weight: 300;
+}
+
+.workIn,
+.footerInfo,
+.footerInfoLink {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
 
 /*  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 760px) {
@@ -901,6 +940,29 @@ header {
         justify-content: stretch;
         justify-items: stretch;
         align-items: stretch;
+    }
+
+    footer {
+        flex-direction: row;
+        padding: 2% 5%;
+    }
+
+    .footerBox {
+        width: 25%;
+    }
+
+    .workIn {
+        text-align: center;
+    }
+
+    .footerInfo {
+        text-align: center;
+    }
+
+    .workIn,
+    .footerInfo,
+    .footerInfoLink {
+        font-size: 16px;
     }
 }
 

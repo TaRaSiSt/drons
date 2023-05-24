@@ -491,7 +491,6 @@
 
 .payment {
     padding: 0 15%;
-    margin-bottom: 150px;
 }
 
 .paymentBlock {
@@ -710,6 +709,10 @@
         opacity: 0.6;
         filter: blur(1.5px);
         -webkit-filter: blur(1.5px);
+    }
+
+    .payment {
+        margin-bottom: 150px;
     }
 
 }
