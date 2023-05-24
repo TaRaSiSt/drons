@@ -495,8 +495,7 @@ header {
 /* Advantages Advantages  Advantages  Advantages Advantages Advantages Advantages Advantages Advantages Advantages Advantages Advantages */
 
 .advantages {
-    padding: 5%;
-    background-color: rgb(242, 242, 242);
+    padding: 3% 10%;
 }
 
 .titleName {
@@ -799,6 +798,11 @@ header {
 
 /*  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 760px) {
+
+    .hideB {
+        display: none;
+    }
+
     .menuButton {
         display: none;
     }

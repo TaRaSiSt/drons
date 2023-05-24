@@ -1,7 +1,6 @@
-hr {
-    height: 0px;
-    border-color: #00ffff;
-    margin: 0;
+.chapterTitle {
+    font-size: 28px;
+    text-align: center;
 }
 
 .droneBanner {
@@ -41,11 +40,6 @@ hr {
 .characteristics {
     margin: 5% 0;
     padding: 0 5%;
-}
-
-.characteristicsTitle {
-    font-size: 28px;
-    text-align: center;
 }
 
 .containercharacteristics {
@@ -259,7 +253,7 @@ hr {
 
 .accordion button[aria-expanded=true]+.accordion-content {
     opacity: 1;
-    max-height: 100vh;
+    max-height: 300vh;
     transition: all 200ms linear;
     will-change: opacity, max-height;
 }
@@ -275,6 +269,263 @@ hr {
 .accordion .accordion-content p {
     font-size: 1rem;
     font-weight: 300;
+}
+
+.accordion hr {
+    height: 0px;
+    border-color: #00ffff;
+    margin: 0;
+}
+
+/* In Box */
+
+.inBox {
+    padding: 0 10%;
+}
+
+.inBoxOne {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "inBoxPhOne"
+        "inBoxTextOne";
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: inBoxOne;
+}
+
+.inBoxPhOne {
+    justify-self: center;
+    align-self: center;
+    grid-area: inBoxPhOne;
+}
+
+.inBoxTextOne {
+    align-self: end;
+    grid-area: inBoxTextOne;
+}
+
+.inBoxTwo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.8fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "inBoxPhTwo"
+        "inBoxTextTwo";
+    grid-area: inBoxTwo;
+}
+
+.inBoxPhTwo {
+    justify-self: center;
+    align-self: center;
+    grid-area: inBoxPhTwo;
+}
+
+.inBoxTextTwo {
+    align-self: end;
+    grid-area: inBoxTextTwo;
+}
+
+.inBoxThree {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "inBoxPhTree"
+        "inBoxTextThree";
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: inBoxThree;
+}
+
+.inBoxPhTree {
+    justify-self: center;
+    align-self: center;
+    grid-area: inBoxPhTree;
+}
+
+.inBoxTextThree {
+    align-self: end;
+    grid-area: inBoxTextThree;
+}
+
+.inBoxFour {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "inBoxPhFour"
+        "inBoxTextFour";
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: inBoxFour;
+}
+
+.inBoxPhFour {
+    justify-self: center;
+    align-self: center;
+    grid-area: inBoxPhFour;
+}
+
+.inBoxTextFour {
+    align-self: end;
+    grid-area: inBoxTextFour;
+}
+
+.inBoxFive {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "inBoxPhFive"
+        "inBoxTextFive";
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: inBoxFive;
+}
+
+.inBoxPhFive {
+    justify-self: center;
+    align-self: center;
+    grid-area: inBoxPhFive;
+}
+
+.inBoxTextFive {
+    grid-area: inBoxTextFive;
+}
+
+.inBoxSix {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "inBoxPhSix"
+        "inBoxTextSix";
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: inBoxSix;
+}
+
+.inBoxPhSix {
+    justify-self: center;
+    align-self: center;
+    grid-area: inBoxPhSix;
+}
+
+.inBoxTextSix {
+    grid-area: inBoxTextSix;
+}
+
+.inBoxSeven {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "inBoxPhSeven"
+        "inBoxTextSeven";
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: inBoxSeven;
+}
+
+.inBoxPhSeven {
+    justify-self: center;
+    align-self: center;
+    grid-area: inBoxPhSeven;
+}
+
+.inBoxTextSeven {
+    grid-area: inBoxTextSeven;
+}
+
+.inBoxEight {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "inBoxPhEight"
+        "inBoxTextEight";
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: inBoxEight;
+}
+
+.inBoxPhEight {
+    justify-self: center;
+    align-self: center;
+    grid-area: inBoxPhEight;
+}
+
+.inBoxTextEight {
+    grid-area: inBoxTextEight;
+}
+
+.containerInBox p {
+    text-align: center;
+}
+
+/* Нам довіряють */
+
+.trust {
+    padding: 0 5%;
+}
+
+/* Payment */
+
+.payment {
+    padding: 0 15%;
+    margin-bottom: 150px;
+}
+
+.paymentBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.masterCard {
+    background-image: url(img/Drons/master-card.png);
+    background-size: 128px;
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 128px;
+    position: relative;
+}
+
+.visa {
+    background-image: url(img/Drons/visa.png);
+    background-size: 128px;
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 128px;
+    position: relative;
+}
+
+.monobank {
+    background-image: url(img/Drons/Monobank.png);
+    background-size: 128px;
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 128px;
+    position: relative;
 }
 
 @media screen and (min-width: 760px) {
@@ -325,6 +576,82 @@ hr {
 
     .characteristicsPhoto>img {
         width: 45vw;
+    }
+
+    .containerInBox {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 50% 50% 50% 50%;
+        grid-auto-rows: 1fr;
+        gap: 5% 5%;
+        grid-auto-flow: column;
+        justify-content: stretch;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-template-areas:
+            "inBoxOne inBoxTwo inBoxThree inBoxFour"
+            "inBoxFive inBoxSix inBoxSeven inBoxEight";
+    }
+
+    .masterCard:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 70%;
+        background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 40%, #ffffff 100%), url(img/Drons/master-card.png);
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 40%, #ffffff 100%), url(img/Drons/master-card.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        opacity: 0.6;
+        filter: blur(1.5px);
+        -webkit-filter: blur(1.5px);
+    }
+
+    .visa:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 70%;
+        background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 40%, #ffffff 100%), url(img/Drons/visa.png);
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 40%, #ffffff 100%), url(img/Drons/visa.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        opacity: 0.6;
+        filter: blur(1.5px);
+        -webkit-filter: blur(1.5px);
+    }
+
+    .monobank:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 70%;
+        background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 40%, #ffffff 100%), url(img/Drons/Monobank.png);
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 40%, #ffffff 100%), url(img/Drons/Monobank.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        opacity: 0.6;
+        filter: blur(1.5px);
+        -webkit-filter: blur(1.5px);
     }
 
 }
