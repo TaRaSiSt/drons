@@ -252,7 +252,7 @@ header {
     color: white;
     margin: 1%;
     padding: 5%;
-    background-image: url(img/Drons/DJIMavic3.png);
+    background-image: url(img/Drons/DJIMavic3Pro.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -743,7 +743,7 @@ header {
 }
 
 .containerStatistics>div {
-    margin: 3% 0;
+    margin: 1% 0;
 }
 
 .firstStatistics {
@@ -941,6 +941,28 @@ footer a:hover {
         justify-items: stretch;
         align-items: stretch;
     }
+
+    /* contactForm */
+
+    .contactForm {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contactFormPhoto {
+        background-image: url(img/Drons/DJIMavic3.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50vw;
+        height: 95vh;
+    }
+
+    .contactFormText {
+        padding: 3%;
+    }
+
+    /* Footer */
 
     footer {
         flex-direction: row;

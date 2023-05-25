@@ -15,6 +15,30 @@
     justify-content: center;
 }
 
+.droneBannerFlyCombo {
+    background-image: url(img/Drons/FlyCombo.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.droneBanner3T {
+    background-image: url(img/Drons/3T.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .droneTitile {
     padding: 0 5%;
     color: white;
