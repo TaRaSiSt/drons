@@ -16,7 +16,7 @@
 }
 
 .droneBannerFlyCombo {
-    background-image: url(img/Drons/FlyCombo.gif);
+    background-image: url(img/Drons/DJIMavicFly.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +28,19 @@
 }
 
 .droneBanner3T {
-    background-image: url(img/Drons/3T.gif);
+    background-image: url(img/Drons/DJIMavic3Т.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.droneBannerClassic {
+    background-image: url(img/Drons/DJIMavic3gif.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
