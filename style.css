@@ -232,7 +232,7 @@ header {
 .containerDrons {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-auto-columns: 50% 50% 50% 50%;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
@@ -245,7 +245,7 @@ header {
         "mavicFly"
         "mavic3Т"
         "mavicClassic"
-        "max4T";
+    ;
 }
 
 .mavic3 {
@@ -794,6 +794,26 @@ header {
     border: 1px solid rgb(242, 242, 242);
 }
 
+/* Contact form */
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactFormPhoto {
+    background-image: url(img/Drons/DJIMavic3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+}
+
+.contactFormText {
+    padding: 3%;
+}
+
 /* Footer */
 
 footer {
@@ -917,11 +937,10 @@ footer a:hover {
         grid-auto-columns: 50% 50% 50% 50%;
         grid-auto-rows: 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 0px 0px;
         grid-template-areas: "mavic3 mavicFly"
-            "mavic3Т mavicClassic"
-            "max4T max4T";
+            "mavic3Т mavicClassic";
         justify-content: stretch;
         justify-items: stretch;
         align-items: stretch;
@@ -945,21 +964,12 @@ footer a:hover {
     /* contactForm */
 
     .contactForm {
-        display: flex;
         flex-direction: row;
     }
 
     .contactFormPhoto {
-        background-image: url(img/Drons/DJIMavic3.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         width: 50vw;
         height: 95vh;
-    }
-
-    .contactFormText {
-        padding: 3%;
     }
 
     /* Footer */
