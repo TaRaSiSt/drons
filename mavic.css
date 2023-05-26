@@ -319,201 +319,20 @@
     padding: 0 10%;
 }
 
-.inBoxOne {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 0.2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "inBoxPhOne"
-        "inBoxTextOne";
-    justify-self: stretch;
-    align-self: stretch;
-    grid-area: inBoxOne;
+.inBoxBlock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: end;
 }
 
-.inBoxPhOne {
-    justify-self: center;
-    align-self: center;
-    grid-area: inBoxPhOne;
+.inBoxCard {
+    width: 100%;
+    margin-bottom: 25px;
 }
 
-.inBoxTextOne {
-    align-self: end;
-    grid-area: inBoxTextOne;
-}
-
-.inBoxTwo {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.8fr 0.2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "inBoxPhTwo"
-        "inBoxTextTwo";
-    grid-area: inBoxTwo;
-}
-
-.inBoxPhTwo {
-    justify-self: center;
-    align-self: center;
-    grid-area: inBoxPhTwo;
-}
-
-.inBoxTextTwo {
-    align-self: end;
-    grid-area: inBoxTextTwo;
-}
-
-.inBoxThree {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 0.2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "inBoxPhTree"
-        "inBoxTextThree";
-    justify-self: stretch;
-    align-self: stretch;
-    grid-area: inBoxThree;
-}
-
-.inBoxPhTree {
-    justify-self: center;
-    align-self: center;
-    grid-area: inBoxPhTree;
-}
-
-.inBoxTextThree {
-    align-self: end;
-    grid-area: inBoxTextThree;
-}
-
-.inBoxFour {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 0.2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "inBoxPhFour"
-        "inBoxTextFour";
-    justify-self: stretch;
-    align-self: stretch;
-    grid-area: inBoxFour;
-}
-
-.inBoxPhFour {
-    justify-self: center;
-    align-self: center;
-    grid-area: inBoxPhFour;
-}
-
-.inBoxTextFour {
-    align-self: end;
-    grid-area: inBoxTextFour;
-}
-
-.inBoxFive {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 0.2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "inBoxPhFive"
-        "inBoxTextFive";
-    justify-self: stretch;
-    align-self: stretch;
-    grid-area: inBoxFive;
-}
-
-.inBoxPhFive {
-    justify-self: center;
-    align-self: center;
-    grid-area: inBoxPhFive;
-}
-
-.inBoxTextFive {
-    grid-area: inBoxTextFive;
-}
-
-.inBoxSix {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 0.2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "inBoxPhSix"
-        "inBoxTextSix";
-    justify-self: stretch;
-    align-self: stretch;
-    grid-area: inBoxSix;
-}
-
-.inBoxPhSix {
-    justify-self: center;
-    align-self: center;
-    grid-area: inBoxPhSix;
-}
-
-.inBoxTextSix {
-    grid-area: inBoxTextSix;
-}
-
-.inBoxSeven {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 0.2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "inBoxPhSeven"
-        "inBoxTextSeven";
-    justify-self: stretch;
-    align-self: stretch;
-    grid-area: inBoxSeven;
-}
-
-.inBoxPhSeven {
-    justify-self: center;
-    align-self: center;
-    grid-area: inBoxPhSeven;
-}
-
-.inBoxTextSeven {
-    grid-area: inBoxTextSeven;
-}
-
-.inBoxEight {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 0.2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "inBoxPhEight"
-        "inBoxTextEight";
-    justify-self: stretch;
-    align-self: stretch;
-    grid-area: inBoxEight;
-}
-
-.inBoxPhEight {
-    justify-self: center;
-    align-self: center;
-    grid-area: inBoxPhEight;
-}
-
-.inBoxTextEight {
-    grid-area: inBoxTextEight;
-}
-
-.containerInBox p {
+.inBoxCardCenter {
     text-align: center;
 }
 
@@ -521,6 +340,19 @@
 
 .trust {
     padding: 0 5%;
+}
+
+.trustBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.trustBlock img {
+    margin: 15px;
+    width: 30vw;
 }
 
 /* Payment */
@@ -751,4 +583,23 @@
         margin-bottom: 150px;
     }
 
+    .inBoxBlock {
+        flex-direction: row;
+        align-items: end;
+    }
+
+    .inBoxCard {
+        width: 45%;
+    }
+
+    .trustBlock img {
+        width: 10vw;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .inBoxCard {
+        width: 23%;
+    }
 }
