@@ -19,13 +19,23 @@ function parser($url) {
     }
 }
 
-$message .="Нове повідомлення з форми";
-$message .="Ім'я: ".$name;
-$message .="Телефон: ".$phone;
-$message .="Email: ".$email;
+function orderSendTelegram($message){
+    $token = "5911786181:AAE984SENTiTQjsluD3mY5vxjJsbaFjakyM";
+    $chat_id = "-929035516";
+    parser("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$massage}");
+}
 
-$token = "5911786181:AAE984SENTiTQjsluD3mY5vxjJsbaFjakyM";
-$chat_id = "-929035516";
-parser();
+$textMessage .="Нове повідомлення з форми\n";
+$textMessage .="Ім'я: ".$name"\n";
+$textMessage .="Телефон: ".$phone"\n";
+$textMessage .="Email: ".$email"\n";
+$textMessage = urlencode($textMessage);
+
+
+orderSendTelegram($textMessage)
+
+
+
+
 
 ?>
