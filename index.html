@@ -193,25 +193,21 @@
         <div class="contactFormText">
             <p style="font-size: 42px;"><strong>Залишились питання?</strong></p>
             <p>Залишайте заявку, ми зв’яжемося з вами найближчим часом</p>
-            <form action="telegram.php" method="POST" onsubmit="return false">
-                <legend>Заголовок формы</legend>
-
-                <div class="form-group">
-                    <label for="">Введите ваше имя</label>
-                    <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
-                </div>
-
-                <div class="form-group">
-                    <label for="">Введите номер телефона</label>
-                    <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
-                </div>
-
-                <div class="form-group">
-                    <label for="">Введите email</label>
-                    <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
-                </div>
-
-                <button type="submit" class="btn btn-primary">Отправить форму</button>
+            <form action="https://formspree.io/f/mlekkzyj" method="POST" onsubmit="return false">
+                <label>
+                    Ваше ім'я:
+                    <input type="name" name="name">
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Номер телефону:
+                    <input type="phone" name="phone">
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
             </form>
         </div>
     </div>
