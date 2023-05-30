@@ -90,6 +90,45 @@
             </div>
         </div>
     </div>
+    <!-- Contact Form -->
+    <div class="contactForm">
+        <div class="contactFormPhoto"></div>
+        <div class="contactFormText">
+            <p style="font-size: 42px; margin: 1% 0;"><strong>Залишились питання?</strong></p>
+            <p style="margin-bottom: 25px;">Залишайте заявку, ми зв’яжемося з вами найближчим часом</p>
+            <form action="https://formspree.io/f/mlekkzyj" method="POST">
+                <div class="group">
+                    <input type="name" name="name" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Ваше ім'я:</label>
+                </div>
+                <!-- <div class="group">
+                        <input type="email" name="email" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Email:</label>
+                    </div> -->
+                <div class="group">
+                    <input type="phone" name="phone" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Номер телефону:</label>
+                </div>
+                <span style="font-size: 18px; margin-bottom: 15px;">Яка модель вас цікавить:</span>
+                <select id="model" name="model" class="classic">
+                    <option value="choose">Вибрати</option>
+                    <option value="mavic3Pro">Mavic3Pro</option>
+                    <option value="flyCombo">Mavic Fly More Combo</option>
+                    <option value="mavic3Т">Mavic 3Т</option>
+                    <option value="mavicClassic">Mavic Classic</option>
+                    <option value="matrice30Т" selected>Matrice 30Т</option>
+                </select>
+                <!-- your other form fields go here -->
+                <button type="submit" class="custom-btn btn-send"><span>Надіслати</span></button>
+            </form>
+        </div>
+    </div>
     <!-- Характеристики 2-->
     <div class="characteristics">
         <p class="chapterTitle">Характеристики DJI Mavic 3 PRO</p>
