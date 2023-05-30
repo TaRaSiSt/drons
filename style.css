@@ -478,49 +478,6 @@ header {
     grid-area: max4TText;
 }
 
-
-
-/* .buttonBuy {
-    padding: 15px;
-    font-size: 26px;
-    font-weight: 800;
-    font-family: 'Comfortaa', sans-serif;
-    border: 0px;
-    border-radius: 15px;
-    color: white;
-    background-color: rgb(55, 216, 55);
-    cursor: pointer;
-}
-
-
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-}
-
-.popup-content {
-    background-color: #fff;
-    width: 300px;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 15px;
-}
-
-.close {
-    font-size: 24px;
-    float: right;
-    cursor: pointer;
-} */
-
 /* Advantages Advantages  Advantages  Advantages Advantages Advantages Advantages Advantages Advantages Advantages Advantages Advantages */
 
 .advantages {
@@ -829,6 +786,7 @@ header {
 .contactForm {
     display: flex;
     flex-direction: column;
+    background: rgba(128, 128, 128, 0.041);
 }
 
 .contactFormPhoto {
@@ -855,6 +813,7 @@ select {
     width: 300px;
     border: none;
     border-bottom: 1px solid #757575;
+    background: inherit;
 }
 
 select {
@@ -925,7 +884,7 @@ input:focus {
 }
 
 label {
-    color: #999;
+    color: black;
     font-size: 18px;
     font-weight: normal;
     position: absolute;
