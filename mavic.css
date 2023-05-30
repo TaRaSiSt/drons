@@ -367,7 +367,7 @@
 }
 
 .slides::-webkit-scrollbar-track {
-    background: transparent;
+    background: rgba(128, 128, 128, 0.147);
 }
 
 .slides>div {
