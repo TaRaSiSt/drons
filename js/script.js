@@ -13,23 +13,21 @@ function closeNav() {
 }
 
 /* Button location */
-function togglePopup() {
-    document.getElementById("popup-1").classList.toggle("active");
-}
+// function togglePopup() {
+//     document.getElementById("popup-1").classList.toggle("active");
+// }
 
-var openBtn = document.getElementById("openBtn");
-var popup = document.getElementById("popup");
-var closeButton = document.querySelector(".close");
+// var openBtn = document.getElementById("openBtn");
+// var popup = document.getElementById("popup");
+// var closeButton = document.querySelector(".close");
 
-function openPopup() {
-    popup.style.display = "block";
-}
+// function openPopup() {
+//     popup.style.display = "block";
+// }
 
-function closePopup() {
-    popup.style.display = "none";
-}
+// function closePopup() {
+//     popup.style.display = "none";
+// }
 
-openBtn.addEventListener("click", openPopup);
-closeButton.addEventListener("click", closePopup);
-
-// Form
+// openBtn.addEventListener("click", openPopup);
+// closeButton.addEventListener("click", closePopup);

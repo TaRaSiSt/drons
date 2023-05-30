@@ -841,7 +841,7 @@ header {
 }
 
 .contactFormText {
-    padding: 1% 3%;
+    padding: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1221,6 +1221,10 @@ footer a:hover {
     .contactFormPhoto {
         width: 45vw;
         height: 70vh;
+    }
+
+    .contactFormText {
+        padding: 2%;
     }
 
     /* Footer */
