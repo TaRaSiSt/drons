@@ -11,19 +11,20 @@
 </head>
 
 <body>
+    <!-- Sidebar -->
     <aside>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#"><img src="" alt="">Logo</a>
+            <a href="index.html"><span style="font-size: 42px; font-weight: 600;">DJI MAVIC</span></a>
             <div class="sideNavLinks">
-                <a href="#">Замовити дрон</a>
-                <a href="#">Наші моделі</a>
-                <a href="#">Характеристики</a>
-                <a href="#">Документи</a>
-                <a href="#">Контакти</a>
+                <a href="#contactForm" onclick="closeNav()">Замовити дрон</a>
+                <a href="#ourModels" onclick="closeNav()">Наші моделі</a>
+                <a href="#characteristics">Характеристики</a>
+                <!-- <a href="#">Документи</a> -->
+                <a href="#contacts" onclick="closeNav()">Контакти</a>
             </div>
             <div class="infoBoxHeader" style="padding-bottom: 50px;">
-                <a href="tel:+380630366101" class="number">(063) 036-61-01</a>
+                <a href="tel:+380630366101" class="number">(0xx) xxx-xx-xx</a>
                 <p class="graphicWork">Графік роботи: 10:00 - 19:00 (пн-сб)</p>
             </div>
         </div>
@@ -39,7 +40,7 @@
                 <a href="index.html" class="logoLink">DJI MAVIC</a>
             </div>
             <div class="infoBoxHeader">
-                <a href="tel:+380630366101" class="number">(063) 036-61-01</a>
+                <a href="tel:+380630366101" class="number">(0xx) xxx-xx-xx</a>
                 <p class="graphicWork hide">Графік роботи: 10:00 - 19:00 (пн-сб)</p>
             </div>
             <!-- Button sidebar -->
@@ -49,10 +50,10 @@
         </div>
         <hr class="hide">
         <div class="navLinks hide">
-            <a href="#">Замовити дрон</a>
             <a href="#ourModels">Наші моделі</a>
-            <a href="#">Характеристики</a>
-            <a href="#">Документи</a>
+            <a href="#contactForm">Замовити дрон</a>
+            <a href="#characteristics">Характеристики</a>
+            <!-- <a href="#">Документи</a> -->
             <a href="#contacts">Контакти</a>
         </div>
     </header>
@@ -66,7 +67,7 @@
         </div>
     </div>
     <!-- Характеристики -->
-    <div class="characteristics">
+    <div class="characteristics" id="characteristics">
         <p class="chapterTitle">Характеристики DJI Matrice 30Т</p>
         <div class="containercharacteristics">
             <div class="characteristicsItemBoxOne">
@@ -210,6 +211,22 @@
             </div>
         </div>
     </div>
+    <!-- Slider -->
+    <div class="sliderBox">
+        <div class="slider">
+            <div class="slides">
+                <div>
+                    <img src="img/Drons/DJIMatrice/MatriceSlider.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/Drons/DJIMatrice/MatriceSliderTwo.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/Drons/DJIMatrice/MatriceSliderThree.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- In Box -->
     <div class="inBox">
         <p class="chapterTitle">В коробці</p>
@@ -225,7 +242,7 @@
             </div>
             <div class="inBoxCard">
                 <div class="inBoxCardCenter">
-                    <img src="" alt="">
+                    <img src="img/Drons/DJIMatrice/Remote.png" alt="">
                 </div>
                 <div class="inBoxCardCenter">
                     <p>Пульт дистанційного керування DJI RC Plus</p>
@@ -234,7 +251,7 @@
             </div>
             <div class="inBoxCard">
                 <div class="inBoxCardCenter">
-                    <img src="" alt="">
+                    <img src="img/Drons/DJIMatrice/Propellers.png" alt="">
                 </div>
                 <div class="inBoxCardCenter">
                     <p>Пропелер (за годинниковою стрілкою)</p>
@@ -243,7 +260,7 @@
             </div>
             <div class="inBoxCard">
                 <div class="inBoxCardCenter">
-                    <img src="" alt="">
+                    <img src="img/Drons/DJIMatrice/Propellers.png" alt="">
                 </div>
                 <div class="inBoxCardCenter">
                     <p>Пропелер (проти годинникової стрілки)</p>
@@ -252,7 +269,7 @@
             </div>
             <div class="inBoxCard">
                 <div class="inBoxCardCenter">
-                    <img src="" alt="">
+                    <img src="img/Drons/DJIMatrice/CommunicationCable.png" alt="">
                 </div>
                 <div class="inBoxCardCenter">
                     <p>Кабель USB-C</p>
@@ -261,7 +278,7 @@
             </div>
             <div class="inBoxCard">
                 <div class="inBoxCardCenter">
-                    <img src="" alt="">
+                    <img src="img/Drons/DJIMatrice/CommunicationCable.png" alt="">
                 </div>
                 <div class="inBoxCardCenter">
                     <p>Кабель USB-C - USB-C</p>
@@ -270,7 +287,7 @@
             </div>
             <div class="inBoxCard">
                 <div class="inBoxCardCenter">
-                    <img src="" alt="">
+                    <img src="img/Drons/DJIMatrice/Cover.png" alt="">
                 </div>
                 <div class="inBoxCardCenter">
                     <p>Чохол для перенесення</p>
@@ -279,7 +296,7 @@
             </div>
             <div class="inBoxCard">
                 <div class="inBoxCardCenter">
-                    <img src="" alt="">
+                    <img src="img/Drons/DJIMatrice/Instrument.png" alt="">
                 </div>
                 <div class="inBoxCardCenter">
                     <p>Гвинти та інструменти</p>
@@ -288,7 +305,7 @@
             </div>
             <div class="inBoxCard">
                 <div class="inBoxCardCenter">
-                    <img src="" alt="">
+                    <img src="img/Drons/DJIMatrice/Baterry.png" alt="">
                 </div>
                 <div class="inBoxCardCenter">
                     <p>Акумуляторна станція BS30</p>
@@ -590,17 +607,14 @@
     <!-- Footer -->
     <footer>
         <div class="footerBox" id="contacts">
-            <img src="" alt="">
+            <div style="margin: 15px 15px 15px 0;">
+                <a href="index.html" class="logoLinkFooter">DJI MAVIC</a>
+            </div>
             <div class="socialLinksFooter">
                 <a href="#"><img src="img/Header/viber.png" alt="Viber"></a>
                 <a href="https://t.me/TaRaSiSt"><img src="img/Header/telegram.png" alt="Telegram"></a>
                 <a href="#"><img src="img/Header/whatsapp.png" alt="Whatsapp"></a>
             </div>
-            <p class="rights">
-                Працюємо офіційно <br>
-                ZELEN DEVELOPMENT LLC | <br>
-                © 2023 All rights reserved
-            </p>
         </div>
         <div class="footerBox">
             <p class="workIn">Працюємо по всій Україні: Львів, Київ, Харків, Одеса, Херсон, Луцьк, Дніпро, Франківськ та
@@ -609,8 +623,8 @@
         </div>
         <div class="footerBox">
             <p class="footerInfo">
-                drony.ukraine@gmail.com <br>
-                <b style="font-size: 18px;">(067) 1111 663</b> <br>
+                somemail@gmail.com <br>
+                <b style="font-size: 18px;">(0xx) xxxx xxx</b> <br>
                 10:00 - 19:00 (пн-сб)
             </p>
         </div>

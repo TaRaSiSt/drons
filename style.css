@@ -700,13 +700,13 @@ header {
 }
 
 .statisticsNumbers {
-    color: #6cb647;
+    color: #ff9900;
     font-size: 33px;
     margin-top: 15px;
 }
 
 .statisticsNumbersBig {
-    color: white;
+    color: #ff9900;
     font-size: 42px;
     margin-top: 15px;
     font-weight: 800;
@@ -776,7 +776,8 @@ header {
     justify-content: center;
     grid-area: fourStatistics;
     text-align: center;
-    background: linear-gradient(75deg, rgba(108, 182, 71, 1) 0%, rgba(90, 182, 93, 1) 50%, rgba(27, 183, 198, 1) 100%);
+    background: rgb(254, 252, 85);
+    background: linear-gradient(90deg, rgba(254, 252, 85, 1) 0%, rgba(0, 255, 255, 1) 75%);
     padding: 3% 10%;
     border: 1px solid rgb(242, 242, 242);
 }
