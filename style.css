@@ -178,7 +178,6 @@ header {
     background-image: url(img/Sky.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
 }
@@ -776,8 +775,7 @@ header {
     justify-content: center;
     grid-area: fourStatistics;
     text-align: center;
-    background: rgb(254, 252, 85);
-    background: linear-gradient(90deg, rgba(254, 252, 85, 1) 0%, rgba(0, 255, 255, 1) 75%);
+    background-color: white;
     padding: 3% 10%;
     border: 1px solid rgb(242, 242, 242);
 }
@@ -1060,6 +1058,10 @@ footer a:hover {
 
 /*  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 760px) {
+
+    .main {
+        background-attachment: fixed;
+    }
 
     .hideB {
         display: none;
