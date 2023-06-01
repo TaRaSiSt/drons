@@ -84,6 +84,17 @@
     font-weight: 600;
 }
 
+.btnBuy {
+    background-color: #00ffff;
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+}
+
 /* characteristics characteristics characteristics characteristics characteristics */
 .characteristics {
     margin: 5% 0;
