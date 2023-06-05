@@ -269,7 +269,7 @@ header {
     justify-items: stretch;
     align-items: stretch;
     grid-template-areas:
-        "mavic3"
+        "mavic3Pro"
         "mavicFly"
         "mavicClassic"
         "mavic3Т"
@@ -277,7 +277,7 @@ header {
     ;
 }
 
-.mavic3 {
+.mavic3Pro {
     color: white;
     margin: 1%;
     padding: 5%;
@@ -292,29 +292,29 @@ header {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "mavic3Name mavic3Name mavic3Link"
+        "mavic3ProName mavic3ProName mavic3ProLink"
         ". . ."
-        "mavic3Text mavic3Text mavic3Text";
-    grid-area: mavic3;
+        "mavic3ProText mavic3ProText mavic3ProText";
+    grid-area: mavic3Pro;
 }
 
-.mavic3Link {
+.mavic3ProLink {
     justify-self: end;
     align-self: start;
-    grid-area: mavic3Link;
+    grid-area: mavic3ProLink;
 }
 
-.mavic3Text {
+.mavic3ProText {
     font-size: 20px;
     align-self: end;
-    grid-area: mavic3Text;
+    grid-area: mavic3ProText;
 }
 
-.mavic3Name {
+.mavic3ProName {
     font-size: 24px;
     font-weight: 600;
     align-self: start;
-    grid-area: mavic3Name;
+    grid-area: mavic3ProName;
 }
 
 .mavicFly {
@@ -475,6 +475,46 @@ header {
     font-size: 20px;
     align-self: end;
     grid-area: max4TText;
+}
+
+.mavic3 {
+    color: white;
+    margin: 1%;
+    padding: 5%;
+    background-image: url(img/Drons/MavicThree/Main.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "mavic3Name mavic3Name mavic3Link"
+        ". . ."
+        "mavic3Text mavic3Text mavic3Text";
+    grid-area: mavic3;
+}
+
+.mavic3Name {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: start;
+    grid-area: mavic3Name;
+}
+
+.mavic3Link {
+    justify-self: end;
+    align-self: start;
+    grid-area: mavic3Link;
+}
+
+.mavic3Text {
+    font-size: 20px;
+    align-self: end;
+    grid-area: mavic3Text;
 }
 
 /* Advantages Advantages  Advantages  Advantages Advantages Advantages Advantages Advantages Advantages Advantages Advantages Advantages */
@@ -1153,9 +1193,9 @@ footer a:hover {
         justify-items: stretch;
         align-items: stretch;
         grid-template-areas:
-            "mavic3 mavicFly"
+            "mavic3Pro mavicFly"
             "mavicClassic mavic3Т"
-            "max4T max4T"
+            "max4T mavic3"
         ;
     }
 
